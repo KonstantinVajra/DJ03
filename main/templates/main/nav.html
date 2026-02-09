@@ -1,0 +1,20 @@
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand__logo">NC</div>
+    <div class="brand__text">
+      <div class="brand__title">Новости Кубы</div>
+      <div class="brand__subtitle">Портал о событиях и жизни острова</div>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <a class="menu__link" href="{% url 'home' %}">Главная</a>
+    <a class="menu__link" href="{% url 'page2' %}">Второстепенная</a>
+    <a class="menu__link" href="{% url 'news_home' %}">Новости</a>
+  </nav>
+
+  <div class="sidebar__footer">
+    <div class="muted">© {% now "Y" %} Новости Кубы</div>
+
+  </div>
+</aside>

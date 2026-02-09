@@ -1,0 +1,22 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+<title>Новости Кубы — Второстепенная</title>
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1 class="hero__title">Второстепенная страница</h1>
+  <p class="hero__lead">
+    Здесь может быть, например, страница “О проекте”, “Контакты” или “Архив”.
+  </p>
+</section>
+
+<div class="card">
+  <h2 class="card__title">Что дальше</h2>
+  <p class="card__text">
+    Следующий шаг по курсу — добавить модели в приложении <b>news</b>, миграции и админку,
+    чтобы можно было создавать новости через панель администратора.
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+<title>Новости Кубы — Главная</title>
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1 class="hero__title">Новости Кубы</h1>
+  <p class="hero__lead">
+    Сайт о событиях, культуре, путешествиях и повседневной жизни на Кубе.
+    Здесь собираем главные новости, заметки и полезные материалы.
+  </p>
+</section>
+
+<section class="grid">
+  <article class="card">
+    <h2 class="card__title">Блог</h2>
+    <p class="card__text">Короткие заметки, мнения, подборки и истории из поездок.</p>
+  </article>
+
+  <article class="card">
+    <h2 class="card__title">Руководства</h2>
+    <p class="card__text">Гайды по маршрутам, ценам, жилью, связи и безопасности.</p>
+  </article>
+
+  <article class="card">
+    <h2 class="card__title">Примеры</h2>
+    <p class="card__text">Шаблоны, примеры страниц, идеи и практические заготовки.</p>
+  </article>
+
+  <article class="card">
+    <h2 class="card__title">Форум</h2>
+    <p class="card__text">Вопросы/ответы, обсуждения, советы и обмен опытом.</p>
+  </article>
+</section>
+
+<section class="note">
+  <h3 class="note__title">О чём этот сайт</h3>
+  <p class="note__text">
+    Это учебный проект на Django: учимся роутингу, шаблонам, статике и позже подключим базу данных
+    для добавления и вывода новостей.
+  </p>
+</section>
+{% endblock %}
