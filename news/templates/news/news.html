@@ -6,13 +6,28 @@
 
 {% block content %}
 <h1>Новостная страница</h1>
-{%for new in news%}
-<div>
-    <h3>{{ new.title}}  </h3>
-    <p>{{new.short_description}}</p>
+
+{% for new in news %}
+<div class="card">
+
+    <h3>{{ new.title }}</h3>
+
+    <p><b>Краткое описание:</b><br>
+       {{ new.short_description }}
+    </p>
+
+    <p><b>Полный текст:</b><br>
+       {{ new.text|linebreaks }}
+    </p>
+
+    <p class="muted">
+        Автор: {{ new.author.username }} <br>
+        Дата публикации: {{ new.pub_date }}
+    </p>
 
 </div>
+{% empty %}
+<p>Новостей пока нет</p>
 {% endfor %}
-
 
 {% endblock %}
